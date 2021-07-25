@@ -16,6 +16,9 @@ namespace PersonDataManagement
             Console.WriteLine("Retrieve Top two people who's age is >60");
             Console.WriteLine("-------------------------------");
             PersonDetails.RetrieveAge(people);
+            Console.WriteLine("Retrieve teenage Records");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.RetriveTeenage(people);
         }
     }
 }
