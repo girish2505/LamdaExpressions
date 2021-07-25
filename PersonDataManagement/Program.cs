@@ -19,6 +19,9 @@ namespace PersonDataManagement
             Console.WriteLine("Retrieve teenage Records");
             Console.WriteLine("-------------------------------");
             PersonDetails.RetriveTeenage(people);
+            Console.WriteLine("Calculating average of the age");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.Average(people);
         }
     }
 }

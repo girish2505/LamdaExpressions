@@ -29,6 +29,11 @@ namespace PersonDataManagement
             var teenageResult = people.FindAll(a => a.Age > 13 && a.Age < 19);
             Display(teenageResult);
         }
+        public static void Average(List<Person> people)
+        {
+            double average = people.Average(a => a.Age);
+            Console.WriteLine("Average age value is : {0} ", average);
+        }
         public static void Display(List<Person> people)
         {
             foreach (Person i in people)
