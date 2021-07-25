@@ -22,6 +22,9 @@ namespace PersonDataManagement
             Console.WriteLine("Calculating average of the age");
             Console.WriteLine("-------------------------------");
             PersonDetails.Average(people);
+            Console.WriteLine("Searching the person by name");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.SearchByName(people, "Girish");
         }
     }
 }

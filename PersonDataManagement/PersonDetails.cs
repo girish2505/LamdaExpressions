@@ -10,7 +10,7 @@ namespace PersonDataManagement
         List<Person> people = new List<Person>();
         public static void AddDetails(List<Person> people)
         {
-            people.Add(new Person("1", "Grish", "Nellore", 21));
+            people.Add(new Person("1", "Girish", "Nellore", 21));
             people.Add(new Person("2", "sasi", "Chennai", 17));
             people.Add(new Person("3", "gowtham", "Newjersy", 60));
             people.Add(new Person("4", "nivas", "bangalore", 65));
@@ -33,6 +33,18 @@ namespace PersonDataManagement
         {
             double average = people.Average(a => a.Age);
             Console.WriteLine("Average age value is : {0} ", average);
+        }
+        public static void SearchByName(List<Person> people,string Name)
+        {
+            var person = people.Find(a => a.Name.Equals(Name));
+            if (person!=null)
+            {
+                Console.WriteLine("SSN :{0} ,Name :{1} ,Address :{2},Age :{3} .", person.SSN, person.Name, person.Address, person.Age);
+            }
+            else
+            {
+                Console.WriteLine("person not found");
+            }
         }
         public static void Display(List<Person> people)
         {
