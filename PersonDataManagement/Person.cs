@@ -17,8 +17,6 @@ namespace PersonDataManagement
             Name = name;
             Age = age;
             Address = address;
-
-
         }
     }
 }

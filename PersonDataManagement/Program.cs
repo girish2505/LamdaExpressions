@@ -10,18 +10,24 @@ namespace PersonDataManagement
         {
             Console.WriteLine("PersonDataManagement");
             List<Person> people = new List<Person>();
-            AddDetails(people);
-        }
-        public static void AddDetails(List<Person> people)
-        {
-            people.Add(new Person("1", "Grish", "Nellore", 21));
-            people.Add(new Person("2", "sasi", "Chennai", 37));
-            people.Add(new Person("3", "gowtham", "Newjersy", 45));
-            people.Add(new Person("4", "nivas", "bangalore", 35));
-            foreach (Person i in people)
-            {
-                Console.WriteLine("SSN :{0} ,Name :{1} ,Address :{2},Age :{3} .", i.SSN, i.Name, i.Address, i.Age);
-            }
+            Console.WriteLine("Person Details");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.AddDetails(people);
+            Console.WriteLine("\nRetrieve Top two people who's age is >60");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.RetrieveAge(people);
+            Console.WriteLine("\nRetrieve teenage Records");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.RetriveTeenage(people);
+            Console.WriteLine("\nCalculating average of the age");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.Average(people);
+            Console.WriteLine("\nSearching the person by name");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.SearchByName(people, "Girish");
+            Console.WriteLine("\nskip the records who's age is less than 60");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.SkipRecordLessThan60(people);
         }
     }
 }
