@@ -13,18 +13,21 @@ namespace PersonDataManagement
             Console.WriteLine("Person Details");
             Console.WriteLine("-------------------------------");
             PersonDetails.AddDetails(people);
-            Console.WriteLine("Retrieve Top two people who's age is >60");
+            Console.WriteLine("\nRetrieve Top two people who's age is >60");
             Console.WriteLine("-------------------------------");
             PersonDetails.RetrieveAge(people);
-            Console.WriteLine("Retrieve teenage Records");
+            Console.WriteLine("\nRetrieve teenage Records");
             Console.WriteLine("-------------------------------");
             PersonDetails.RetriveTeenage(people);
-            Console.WriteLine("Calculating average of the age");
-            Console.WriteLine("-------------------------------");
+            Console.WriteLine("\nCalculating average of the age");
+            Console.WriteLine("------------------------------ - ");
             PersonDetails.Average(people);
-            Console.WriteLine("Searching the person by name");
+            Console.WriteLine("\nSearching the person by name");
             Console.WriteLine("-------------------------------");
             PersonDetails.SearchByName(people, "Girish");
+            Console.WriteLine("\nskip the records who's age is less than 60");
+            Console.WriteLine("-------------------------------");
+            PersonDetails.SkipRecordLessThan60(people);
         }
     }
 }

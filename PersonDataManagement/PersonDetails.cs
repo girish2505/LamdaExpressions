@@ -46,6 +46,11 @@ namespace PersonDataManagement
                 Console.WriteLine("person not found");
             }
         }
+        public static void SkipRecordLessThan60(List<Person> people)
+        {
+            var result = people.FindAll(a => a.Age > 60);
+            Display(result);
+        }
         public static void Display(List<Person> people)
         {
             foreach (Person i in people)
