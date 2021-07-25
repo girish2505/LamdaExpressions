@@ -20,7 +20,11 @@ namespace PersonDataManagement
             Console.WriteLine("-------------------------------");
             PersonDetails.RetriveTeenage(people);
             Console.WriteLine("\nCalculating average of the age");
+<<<<<<< HEAD
             Console.WriteLine("-------------------------------");
+=======
+            Console.WriteLine("------------------------------ - ");
+>>>>>>> 6.SkipRecordLessThan60
             PersonDetails.Average(people);
             Console.WriteLine("\nSearching the person by name");
             Console.WriteLine("-------------------------------");

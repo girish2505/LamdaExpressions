@@ -34,10 +34,17 @@ namespace PersonDataManagement
             double average = people.Average(a => a.Age);
             Console.WriteLine("Average age value is : {0} ", average);
         }
+<<<<<<< HEAD
         public static void SearchByName(List<Person> people, string Name)
         {
             var person = people.Find(a => a.Name.Equals(Name));
             if (person != null)
+=======
+        public static void SearchByName(List<Person> people,string Name)
+        {
+            var person = people.Find(a => a.Name.Equals(Name));
+            if (person!=null)
+>>>>>>> 6.SkipRecordLessThan60
             {
                 Console.WriteLine("SSN :{0} ,Name :{1} ,Address :{2},Age :{3} .", person.SSN, person.Name, person.Address, person.Age);
             }
